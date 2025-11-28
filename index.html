@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경북대학교 - 진리를 담아 세계로, 꿈을 담아 미래로!</title>
+    <style>
+        /*
+         * 전역 스타일 초기화 및 폰트 설정
+         */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* 배경색: 은은한 회색 */
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /*
+         * 메인 히어로 섹션 - 웅장한 배경과 슬로건
+         */
+        .hero-section {
+            height: 100vh; /* 뷰포트 전체 높이 */
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), /* 배경 이미지 위에 어두운 오버레이 추가 */
+                url('KNU_MAIN_IMAGE_PLACEHOLDER.jpg') no-repeat center center/cover; /* 배경 이미지 경로를 여기에 넣으세요 */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* 입체감 부여 */
+        }
+        
+        .logo-text {
+            font-size: 5vw; /* 뷰포트 너비에 따른 반응형 크기 */
+            font-weight: 900; /* 매우 굵게 */
+            margin-bottom: 20px;
+            letter-spacing: 5px; /* 글자 간격 넓게 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid #A00000; /* 핵심 상징색 (Deep Red/Burgundy) */
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .slogan {
+            font-size: 2.5vw;
+            font-weight: 700;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            color: #FFD700; /* 황금색 (Gold) 포인트 */
+        }
+
+        /*
+         * 소개 콘텐츠 섹션 - 깔끔한 정보 제공
+         */
+        .content-section {
+            padding: 80px 5%;
+            background-color: white;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            width: 30%;
+            min-width: 280px;
+            padding: 30px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            border-left: 5px solid #A00000; /* 핵심 상징색 강조 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* 마우스 오버 시 살짝 들어올려 시선 집중 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #A00000;
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        /*
+         * 푸터
+         */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 5%;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* 미디어 쿼리: 모바일 최적화 */
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 10vw;
+            }
+            .slogan {
+                font-size: 4vw;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 메인 히어로 섹션: 경북대학교의 위용을 보여주는 웅장한 비주얼 -->
+    <div class="hero-section">
+        <h1 class="logo-text">경북대학교 (KNU)</h1>
+        <p class="slogan">
+            진리를 담아 세계로, 꿈을 담아 미래로! <br>
+            열린 마음, 뜨거운 열정, 끝없는 도전
+        </p>
+    </div>
+
+    <!-- 2. 소개 콘텐츠 섹션: 핵심 가치 제시 -->
+    <div class="content-section">
+        <h2>KNU, 지역을 넘어 세계로</h2>
+        <p>경북대학교는 70년의 역사와 전통을 바탕으로 지역 사회에 기여하고, 글로벌 인재를 양성하는 대한민국 대표 국립대학교입니다.</p>
+        
+        <div class="card-container">
+            
+            <div class="card">
+                <h3>진리 (Truth)</h3>
+                <p>끊임없는 학문 탐구와 지식 창조를 통해 인류 사회의 발전에 기여합니다.</p>
+            </div>
+
+            <div class="card">
+                <h3>긍지 (Pride)</h3>
+                <p>복현인으로서의 자부심을 가지고, 미래를 선도하는 주역으로 성장합니다.</p>
+            </div>
+
+            <div class="card">
+                <h3>봉사 (Service)</h3>
+                <p>더불어 사는 사회를 위해 따뜻한 마음으로 봉사하는 자세를 갖춥니다.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 3. 푸터: 기본 정보 -->
+    <div class="footer">
+        <p>
+            Copyright &copy; Kyungpook National University. All rights reserved.<br>
+            41566 대구광역시 북구 대학로 80 (산격동, 경북대학교)
+        </p>
+    </div>
+
+</body>
+</html>
